@@ -28,42 +28,65 @@
       <section>
         <p>
           Carakin ("we", "our", or "the app") is operated as a family wellness tracking service.
-          This Privacy Policy explains what information we process, how we protect it, and the
-          choices you have.
+          This Privacy Policy explains what we can and cannot see, how encrypted data is handled,
+          and the choices you have.
+        </p>
+        <p>
+          <strong>Important:</strong> We do not collect or read your health, medication, appointment,
+          task, or document content. That information is encrypted on your device before it reaches
+          our servers. We only store and sync the encrypted result, which we cannot decrypt.
         </p>
       </section>
 
       <section>
-        <h2>What we collect</h2>
+        <h2>What we can access</h2>
         <p>
-          • Account information from your sign-in provider (Google, Apple, or Microsoft): name,
-          email address, and account identifier.
-          • Family membership data: family name, roles, invites, and device notification tokens
-          for schedule reminders.
-          • Health and care data you or your family enter or sync: check-ins, medications,
-          appointments, tasks, documents, and device metrics (such as steps, sleep, heart rate,
-          and exercise minutes) when you connect Health Connect.
-          • Technical diagnostics when enabled: crash reports, error logs, and basic device/app
-          version information.
+          To run the app, we process a small amount of information in readable form:
+        </p>
+        <p>
+          • <strong>Account sign-in:</strong> name, email address, and account identifier from
+          Google, Apple, or Microsoft (used only to authenticate you).
+          • <strong>Family setup:</strong> family name, member roles, invites, and membership
+          records (used to connect the right people in the app).
+          • <strong>Notifications:</strong> device push tokens (used to deliver schedule reminders
+          you set; reminder content is not sent in readable form through our servers).
+          • <strong>Diagnostics (when enabled):</strong> crash reports, error logs, and basic
+          device or app version information (does not include decrypted health content).
         </p>
       </section>
 
       <section>
-        <h2>How health data is protected</h2>
+        <h2>Health and care content we do not collect in readable form</h2>
         <p>
-          Health entries and uploaded files are encrypted on your device before they are stored in
-          Firebase. Carakin servers receive ciphertext only. We do not hold your family decryption
-          key. Losing your recovery code and all trusted devices can make encrypted data
-          unrecoverable.
+          The wellness information you and your family enter or sync, including check-ins,
+          medications, appointments, tasks, uploaded documents, profile photos, and Health Connect
+          metrics (such as steps, sleep, heart rate, and exercise minutes), is encrypted on your
+          device before it is uploaded.
+        </p>
+        <p>
+          Our cloud storage receives ciphertext only. Carakin does not hold your family decryption
+          key and cannot read, search, sell, or use the underlying content of that encrypted data.
+          Only people in your family who have the key on their devices can decrypt and view it.
+        </p>
+      </section>
+
+      <section>
+        <h2>How encryption works</h2>
+        <p>
+          Encryption happens on your phone before data is sent to Firebase. We store encrypted
+          blobs and sync them between your devices so the app works, but the readable content stays
+          on your side of the encryption. Losing your recovery code and all trusted devices can make
+          encrypted data unrecoverable, including by us.
         </p>
       </section>
 
       <section>
         <h2>How we use information</h2>
         <p>
-          We use your information to operate the app: authenticate you, sync encrypted data
-          between your devices, deliver local and push-triggered reminders, and improve
-          reliability. We do not sell your personal or health information.
+          We use readable account and family data to sign you in, manage membership, and deliver
+          reminders. We use encrypted payloads only as opaque data to store and sync between your
+          devices. We do not sell personal or health information, and we do not have access to the
+          readable contents of your encrypted health data.
         </p>
       </section>
 
@@ -71,8 +94,10 @@
         <h2>Third-party services</h2>
         <p>
           Carakin uses Google Firebase (authentication, database, storage, cloud messaging, and
-          crash reporting) and platform health APIs (Health Connect on Android). Those providers
-          process data according to their own policies and our configuration.
+          crash reporting) and platform health APIs (Health Connect on Android). Health content in
+          Firebase is encrypted on your device before upload; providers store and transmit ciphertext
+          but cannot read it without your family key. Other readable account and operational data is
+          processed according to their policies and our configuration.
         </p>
       </section>
 
