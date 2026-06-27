@@ -421,18 +421,6 @@ img {
     grid-template-columns: 1fr minmax(240px, 320px);
     gap: 56px;
   }
-
-  .app-carousel-slide-reverse .app-carousel-slide-inner {
-    grid-template-columns: minmax(240px, 320px) 1fr;
-  }
-
-  .app-carousel-slide-reverse .feature-row-copy {
-    order: 2;
-  }
-
-  .app-carousel-slide-reverse .phone-mockup {
-    order: 1;
-  }
 }
 
 .app-carousel-dots {
